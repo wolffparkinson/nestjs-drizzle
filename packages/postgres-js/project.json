@@ -1,0 +1,33 @@
+{
+  "name": "postgres-js",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/postgres-js/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/postgres-js",
+        "tsConfig": "packages/postgres-js/tsconfig.lib.json",
+        "packageJson": "packages/postgres-js/package.json",
+        "main": "packages/postgres-js/src/index.ts",
+        "assets": ["packages/postgres-js/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

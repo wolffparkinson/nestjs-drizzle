@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "strict": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nestjs-drizzle/cache": ["packages/cache/src/index.ts"],
+      "@nestjs-drizzle/core": ["packages/core/src/index.ts"],
+      "@nestjs-drizzle/postgres-js": ["packages/postgres-js/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

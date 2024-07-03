@@ -1,0 +1,21 @@
+{
+  "name": "@nestjs-drizzle/cache",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "redis": "^4.0.0",
+    "redis-stores": "^0.0.3"
+  },
+  "peerDependencies": {
+    "drizzle-orm": ">=0.31.0"
+  },
+  "devDependencies": {
+    "tslib": "^2.3.0"
+  }
+}
