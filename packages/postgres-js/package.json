@@ -5,8 +5,7 @@
   "main": "./src/index.js",
   "typings": "./src/index.d.ts",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
   "dependencies": {
     "@nestjs-drizzle/core": "^0.0.1",
