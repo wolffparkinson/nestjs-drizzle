@@ -1,3 +1,14 @@
+# 1.0.0 (2024-07-31)
+
+
+### 🩹 Fixes
+
+- **postgres:** update dependencies ([b4b5bea](https://github.com/wolffparkinson/nestjs-drizzle/commit/b4b5bea))
+
+### ❤️  Thank You
+
+- wolffparkinson
+
 ## 0.3.1 (2024-07-31)
 
 
