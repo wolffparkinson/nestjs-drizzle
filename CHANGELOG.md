@@ -1,3 +1,14 @@
+## 0.3.1 (2024-07-31)
+
+
+### 🩹 Fixes
+
+- **cache:** use correct table name ([30430c1](https://github.com/wolffparkinson/nestjs-drizzle/commit/30430c1))
+
+### ❤️  Thank You
+
+- wolffparkinson
+
 ## 0.3.0 (2024-07-31)
 
 This was a version bump only, there were no code changes.
