@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { ExtractTablesWithRelations, Query, isTable } from 'drizzle-orm';
+import { ExtractTablesWithRelations, Query } from 'drizzle-orm';
 import { AnyPgSelect, PgSelectBase } from 'drizzle-orm/pg-core';
 import { PgRelationalQuery } from 'drizzle-orm/pg-core/query-builders/query';
 import { ObjectStore, RedisClient } from 'redis-stores';
@@ -32,11 +32,10 @@ export class DrizzleCacheProvider<TSchema extends Record<string, unknown>> {
       sql: Query | undefined = undefined;
 
     if (query instanceof PgSelectBase) {
-      if (!isTable(query['config'].table)) {
-        throw new Error('Cache for non-table queries is not implemented');
-      }
-      tablename = getFullTableName(query['config'].table);
+      const table = query['config'].table;
       sql = query.toSQL();
+      // @ts-expect-error
+      tablename = getFullTableName(table);
     }
 
     if (query instanceof PgRelationalQuery) {
