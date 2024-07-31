@@ -1,3 +1,14 @@
+## 0.2.0 (2024-07-31)
+
+
+### 🩹 Fixes
+
+- update lockfile ([1c90a7d](https://github.com/wolffparkinson/nestjs-drizzle/commit/1c90a7d))
+
+### ❤️  Thank You
+
+- wolffparkinson
+
 ## 0.1.0 (2024-07-31)
 
 This was a version bump only, there were no code changes.
