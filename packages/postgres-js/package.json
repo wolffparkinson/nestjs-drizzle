@@ -1,6 +1,5 @@
 {
   "name": "@nestjs-drizzle/postgres-js",
-  "version": "0.0.3",
   "type": "commonjs",
   "main": "./src/index.js",
   "typings": "./src/index.d.ts",
@@ -8,15 +7,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@nestjs-drizzle/core": "^0.0.1",
-    "sql-formatter": "^15.3.2"
-  },
-  "devDependencies": {
-    "tslib": "^2.3.0"
-  },
-  "peerDependencies": {
-    "@nestjs/common": ">=10.0.0",
-    "drizzle-orm": "0.32.1",
-    "postgres": ">=3.0.0"
+    "@nestjs-drizzle/core": "file:../core"
   }
 }
